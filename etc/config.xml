@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<reepay_payment>
+				<active>0</active>
+				<title>Credit card by Reepay</title>
+				<instructions>Reepay payment</instructions>
+				<private_key_test/>
+				<private_key/>
+				<api_key_type>0</api_key_type>
+				<display_type>3</display_type>
+				<auto_capture>0</auto_capture>
+                <send_order_line>1</send_order_line>
+                <surcharge_fee>0</surcharge_fee>
+                <save_card_enable>0</save_card_enable>
+                <save_card_type>0</save_card_type>
+				<send_order_email_when_success>1</send_order_email_when_success>
+				<order_status_before_payment>pending</order_status_before_payment>
+				<order_status_after_payment>processing</order_status_after_payment>
+				<cancel_order_after_payment_cancel>0</cancel_order_after_payment_cancel>
+				<allowspecific/>
+				<specificcountry/>
+				<allowwed_payment>card,dankort,visa,visa_dk,visa_elec,mc,amex,klarna_pay_later,klarna_pay_now,diners,maestro,laser,discover,jcb,china_union_pay,ffk,applepay,paypal,resurs,googlepay</allowwed_payment>
+				<payment_icons>american-express,dankort,diners-club-international,discover,forbrugsforeningen,jcb,maestro,mastercard,mobilepay,unionpay,viabill,visa,visa-electron,klarna-pay-later,klarna-pay-now,applepay,paypal,resurs,googlepay</payment_icons>
+				<payment_link>payment_reepay_payment_payment_link</payment_link>
+				<sort_order>0</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepaypayment</model>
+			</reepay_payment>
+			<reepay_viabill>
+				<active>0</active>
+				<title>Viabill payment by Reepay</title>
+				<instructions>Viabill payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayviabill</model>
+			</reepay_viabill>
+			<reepay_mobilepay>
+				<active>0</active>
+				<title>Mobilepay payment by Reepay</title>
+				<instructions>Mobilepay payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepaymobilepay</model>
+			</reepay_mobilepay>
+            <reepay_applepay>
+				<active>0</active>
+				<title>Apple Pay payment by Reepay</title>
+				<instructions>Apple Pay payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayapplepay</model>
+			</reepay_applepay>
+            <reepay_paypal>
+				<active>0</active>
+				<title>Paypal payment by Reepay</title>
+				<instructions>Paypal payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepaypaypal</model>
+			</reepay_paypal>
+            <reepay_klarnapaynow>
+				<active>0</active>
+				<title>Klarna Pay Now payment by Reepay</title>
+				<instructions>Klarna Pay Now payment</instructions>
+                <show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayklarnapaynow</model>
+			</reepay_klarnapaynow>
+            <reepay_klarnapaylater>
+				<active>0</active>
+				<title>Klarna Pay Later payment by Reepay</title>
+				<instructions>Klarna Pay Later payment</instructions>
+                <show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayklarnapaylater</model>
+			</reepay_klarnapaylater>
+            <reepay_klarnasliceit>
+                <active>0</active>
+                <title>Klarna Slice It payment by Reepay</title>
+                <instructions>Klarna Slice It payment</instructions>
+                <show_icon>0</show_icon>
+                <allowspecific>0</allowspecific>
+                <specificcountry>0</specificcountry>
+                <sort_order>2</sort_order>
+                <model>Radarsofthouse\Reepay\Model\Reepayklarnasliceit</model>
+            </reepay_klarnasliceit>
+            <reepay_swish>
+				<active>0</active>
+				<title>Swish payment by Reepay</title>
+				<instructions>Swish payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayswish</model>
+			</reepay_swish>
+            <reepay_resurs>
+				<active>0</active>
+				<title>Resurs Bank payment by Reepay</title>
+				<instructions>Resurs Bank payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayresurs</model>
+			</reepay_resurs>
+            <reepay_vipps>
+                <active>0</active>
+                <title>Vipps payment by Reepay</title>
+                <instructions>Vipps payment</instructions>
+                <show_icon>0</show_icon>
+                <allowspecific>0</allowspecific>
+                <specificcountry>0</specificcountry>
+                <sort_order>2</sort_order>
+                <model>Radarsofthouse\Reepay\Model\Reepayvipps</model>
+            </reepay_vipps>
+            <reepay_forbrugsforeningen>
+				<active>0</active>
+				<title>Forbrugsforeningen payment by Reepay</title>
+				<instructions>Forbrugsforeningen payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepayforbrugsforeningen</model>
+			</reepay_forbrugsforeningen>
+            <reepay_googlepay>
+				<active>0</active>
+				<title>Googlepay payment by Reepay</title>
+				<instructions>Googlepay payment</instructions>
+				<show_icon>0</show_icon>
+				<allowspecific>0</allowspecific>
+				<specificcountry>0</specificcountry>
+				<sort_order>2</sort_order>
+				<model>Radarsofthouse\Reepay\Model\Reepaygooglepay</model>
+			</reepay_googlepay>
+		</payment>
+	</default>
+</config>
