@@ -1,5 +1,5 @@
 {
-    "name": "reepay/magento2-reepay-module",
+    "name": "reepay-payment/magento2-reepay-module",
     "description": "Magento2 module",
     "type": "magento2-module",
     "license": "OSC",
