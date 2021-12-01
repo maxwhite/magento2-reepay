@@ -1,0 +1,14 @@
+{
+    "name": "reepay/magento2-reepay-module",
+    "description": "Magento2 module",
+    "type": "magento2-module",
+    "license": "OSC",
+    "authors": [
+        {
+            "name": "Max White",
+            "email": "maxwhite1983@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
